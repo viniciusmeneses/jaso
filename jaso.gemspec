@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.email = ["vinicius.meneses04@gmail.com"]
   spec.license = "MIT"
 
-  spec.summary = ""
-  spec.description = ""
+  spec.summary = "Just Another Service Object"
+  spec.description = "Just Another Service Object"
   spec.homepage = "https://github.com/viniciusmeneses/jaso"
 
   spec.metadata = {
@@ -23,13 +23,13 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.platform = Gem::Platform::RUBY
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.5.0"
 
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "simplecov", "~> 0.22"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "simplecov"
 
-  spec.add_development_dependency "standard", "~> 1.21"
-  spec.add_development_dependency "rubocop", "~> 1.42"
-  spec.add_development_dependency "rubocop-performance", "~> 1.15"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.16"
+  spec.add_development_dependency "standard", "~> 1.7"
+  spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "rubocop-performance"
+  spec.add_development_dependency "rubocop-rspec"
 end
