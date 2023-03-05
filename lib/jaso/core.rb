@@ -1,9 +1,15 @@
 # frozen_string_literal: true
 
+require_relative "callable"
 require_relative "finished"
+require_relative "not_finished"
 require_relative "result"
 
 module Jaso::Core
+  def self.included(base)
+    base.include(Jaso::Callable)
+  end
+
   def initialize(inputs = {})
     @inputs = inputs
   end
