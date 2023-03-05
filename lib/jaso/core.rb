@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative "attributable"
 require_relative "callable"
 require_relative "finished"
 require_relative "not_finished"
@@ -7,6 +8,7 @@ require_relative "result"
 
 module Jaso::Core
   def self.included(base)
+    base.include(Jaso::Attributable)
     base.include(Jaso::Callable)
   end
 
