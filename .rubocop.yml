@@ -8,7 +8,12 @@ inherit_gem:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 2.6
 
 RSpec:
   Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
