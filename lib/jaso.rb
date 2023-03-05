@@ -1,4 +1,7 @@
-require_relative "jaso/version"
+# frozen_string_literal: true
 
-module Jaso
+require_relative "jaso/core"
+
+class Jaso
+  include Core
 end
