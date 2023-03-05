@@ -61,12 +61,12 @@ PLATFORMS
 
 DEPENDENCIES
   jaso!
-  rspec
-  rubocop
-  rubocop-performance
-  rubocop-rspec
-  simplecov
-  standard (~> 1.7)
+  rspec (>= 3.12)
+  rubocop (>= 1.25)
+  rubocop-performance (>= 1.13)
+  rubocop-rspec (>= 2.10)
+  simplecov (>= 0.22)
+  standard (>= 1.7)
 
 BUNDLED WITH
    2.3.26

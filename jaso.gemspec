@@ -25,11 +25,11 @@ Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
   spec.required_ruby_version = ">= 2.5.0"
 
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "rspec", ">= 3.12"
+  spec.add_development_dependency "simplecov", ">= 0.22"
 
-  spec.add_development_dependency "standard", "~> 1.7"
-  spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "rubocop-performance"
-  spec.add_development_dependency "rubocop-rspec"
+  spec.add_development_dependency "standard", ">= 1.7"
+  spec.add_development_dependency "rubocop", ">= 1.25"
+  spec.add_development_dependency "rubocop-performance", ">= 1.13"
+  spec.add_development_dependency "rubocop-rspec", ">= 2.10"
 end
