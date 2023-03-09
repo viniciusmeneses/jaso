@@ -12,17 +12,12 @@ module Jaso::Core
   def self.included(base)
     base.include(Jaso::Attributable)
     base.include(Jaso::Callable)
+    base.private_class_method :new
   end
 
   def initialize(inputs = {})
-    @inputs = inputs
+    @__inputs = inputs
   end
-
-  # Must be overwritten
-  def call
-  end
-
-  private
 
   def success!(**data)
     result = Jaso::Result.new(Jaso::Result::SUCCESS, data)
