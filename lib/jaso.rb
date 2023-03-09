@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "jaso/core"
-
 class Jaso
+  require_relative "jaso/core"
   include Core
 end
