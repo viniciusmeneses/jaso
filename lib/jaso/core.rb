@@ -8,10 +8,13 @@ module Jaso::Core
   require_relative "not_finished"
   require_relative "result"
 
+  require_relative "validator/active_model"
 
   def self.included(base)
     base.include(Jaso::Attributable)
     base.include(Jaso::Callable)
+    base.extend(Jaso::Configurable)
+
     base.private_class_method :new
   end
 
